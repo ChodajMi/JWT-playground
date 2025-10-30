@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JWT Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="playground.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎓 JWT Playground</h1>
+      <p>Visualize, Decode, and Validate your Token</p>
+    </div>
+
+    <div class="content">
+      <div class="timer-display" id="timerDisplay">
+        <p>Token expires in:</p>
+        <h2 id="countdown">60</h2>
+        <p>seconds</p>
+      </div>
+
+      <div class="token-display">
+        <h3>Your JWT Token:</h3>
+        <div class="token-parts" id="fullToken"></div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn" id="decodeBtn">Decode Token</button>
+        <button class="btn" id="validateBtn">Validate Token</button>
+        <button class="btn btn-secondary" id="logoutBtn">Logout</button>
+      </div>
+
+      <div id="statusDisplay"></div>
+      <div id="decodedDisplay"></div>
+    </div>
+  </div>
+
+  <script src="script/jwt-utils.js"></script>
+  <script src="playground.js"></script>
+</body>
+</html>

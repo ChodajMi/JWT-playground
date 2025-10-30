@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - JWT Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔐 JWT Learning Playground</h1>
+      <p>Login to generate your JWT</p>
+    </div>
+
+    <div class="content">
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" required placeholder="Enter username" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="Enter password" />
+        </div>
+        <button type="submit" class="btn">Login & Generate JWT</button>
+        <div class="error" id="loginError">Invalid credentials. Please try again.</div>
+      </form>
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </div>
+
+  <script src="script/jwt-utils.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
