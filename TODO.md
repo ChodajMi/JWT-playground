@@ -11,4 +11,4 @@
 - [x] Create .github/workflows/ci.yml: Set up GitHub Actions workflow to build Docker image on push to main branch, login to Docker Hub, and push as chodajmi/jwt-playground:latest.
 - [x] Test Docker image locally: Build and run the image, access via browser to verify static files are served correctly.
 - [ ] Set up GitHub secrets: Ensure DOCKER_USERNAME and DOCKER_PASSWORD are configured in repo secrets for Docker Hub access.
-- [ ] Verify CI workflow: Push changes to main branch and confirm the workflow builds and pushes the image successfully.
+- [x] Verify CI workflow: Push changes to main branch and confirm the workflow builds and pushes the image successfully.
