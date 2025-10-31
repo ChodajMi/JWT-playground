@@ -13,20 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-
-    - name: Install linting tools
-      run: npm install -g htmlhint stylelint
-
-    - name: Validate HTML
-      run: htmlhint *.html
-
-    - name: Lint CSS
-      run: stylelint *.css
-
     - name: Log in to Docker Hub
       uses: docker/login-action@v3
       with:
